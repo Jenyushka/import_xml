@@ -1,4 +1,20 @@
+<?php
 
+$page = $_SERVER['PHP_SELF'];
+$sec = "300";
+$map_url = 'http://xmlsync.billypds.com/rate_anomaly.xml?key=2df4e8db52c86d700fee853c4d7e308d&id=194,202,204,215,217,220,...';
+
+//Create table in DB
+/*
+CREATE  TABLE `rate_anomaly` (   
+    `property_id`         INT          NOT NULL ,
+    `property_identifier`  CHAR(4) NOT NULL ,
+    `anomaly_id` VARCHAR(100) NOT NULL ,  
+    `node_values` VARCHAR(100) NOT NULL ,    
+ PRIMARY KEY (`anomaly_id`) );
+*/
+
+?>
 <html>
     <head>
     <meta http-equiv="refresh" content="<?php echo $sec?>;URL='<?php echo $page?>'">
